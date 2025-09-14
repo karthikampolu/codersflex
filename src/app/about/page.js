@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function AboutPage() {
   return (
     <div style={{ margin: 0, padding: 0, fontFamily: 'Arial, sans-serif' }}>
@@ -20,55 +22,54 @@ export default function AboutPage() {
           justifyContent: 'space-between',
           alignItems: 'center'
         }}>
-         <a href="/" style={{ 
-  textDecoration: 'none', 
-  display: 'flex', 
-  alignItems: 'center', 
-  gap: '10px',
-  marginLeft: '-30px',// Add this line
-}}>
-  <div style={{
-    width: '40px',
-    height: '40px',
-    background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
-    borderRadius: '8px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '8px'
-  }}>
-    <img 
-      src="/images/logo.png" 
-      alt="CodersFlex Logo"
-      style={{
-        width: '30px',
-        height: '24px',
-        filter: 'brightness(0) invert(1)'
-
-      }}
-    />
-  </div>
-  <div>
-    <div style={{
-      fontSize: '28px',
-      fontWeight: '700',
-      color: '#1e293b',
-      lineHeight: '1'
-    }}>CodersFlex</div>
-    <div style={{
-      fontSize: '12px',
-      color: '#64748b',
-      fontStyle: 'italic',
-      marginTop: '2px'
-    }}>Communicate. Collaborate. Create.</div>
-  </div>
-</a>
+         <Link href="/" style={{ 
+          textDecoration: 'none', 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: '10px',
+          marginLeft: '-30px'
+        }}>
+          <div style={{
+            width: '40px',
+            height: '40px',
+            background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
+            borderRadius: '8px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '8px'
+          }}>
+            <img 
+              src="/images/logo.png" 
+              alt="CodersFlex Logo"
+              style={{
+                width: '30px',
+                height: '24px',
+                filter: 'brightness(0) invert(1)'
+              }}
+            />
+          </div>
+          <div>
+            <div style={{
+              fontSize: '28px',
+              fontWeight: '700',
+              color: '#1e293b',
+              lineHeight: '1'
+            }}>CodersFlex</div>
+            <div style={{
+              fontSize: '12px',
+              color: '#64748b',
+              fontStyle: 'italic',
+              marginTop: '2px'
+            }}>Communicate. Collaborate. Create.</div>
+          </div>
+        </Link>
           
           <nav style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
-            <a href="/" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>HOME</a>
-            <a href="/#solutions" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>SOLUTIONS</a>
-           <a href="/services" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>SERVICES</a>
-            <a href="/about" style={{ textDecoration: 'none', color: '#2563eb', fontWeight: '600' }}>ABOUT US</a>
+            <Link href="/" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>HOME</Link>
+            <Link href="/#solutions" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>SOLUTIONS</Link>
+           <Link href="/services" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>SERVICES</Link>
+            <Link href="/about" style={{ textDecoration: 'none', color: '#2563eb', fontWeight: '600' }}>ABOUT US</Link>
            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Contact Request&body=Hi, I am interested in your services." target="_blank" style={{
               background: '#2563eb',
               color: 'white',
@@ -132,8 +133,8 @@ export default function AboutPage() {
                 color: '#64748b',
                 marginBottom: '25px'
                 }}>
-                At CodersFlex, we're all about building powerful, secure, and future-proof digital solutions. 
-                Whether it's developing robust backend systems or locking down your tech infrastructure, we've got it covered.
+                At CodersFlex, we&apos;re all about building powerful, secure, and future-proof digital solutions. 
+                Whether it&apos;s developing robust backend systems or locking down your tech infrastructure, we&apos;ve got it covered.
                 </p>
 
                 <p style={{
@@ -142,7 +143,7 @@ export default function AboutPage() {
                 color: '#64748b',
                 marginBottom: '25px'
                 }}>
-                We're a duo of tech enthusiasts who've teamed up to make great things happen in the world of 
+                We&apos;re a duo of tech enthusiasts who&apos;ve teamed up to make great things happen in the world of 
                 development and cybersecurity. We specialize in end-to-end software development and comprehensive 
                 cybersecurity services, helping startups, SMEs, and enterprises scale with confidence.
                 </p>
@@ -153,7 +154,7 @@ export default function AboutPage() {
                 color: '#2563eb',
                 fontStyle: 'italic'
                 }}>
-                From idea to execution—and protection—we're there at every step.
+                From idea to execution—and protection—we&apos;re there at every step.
                 </p>
             </div>
 
@@ -196,7 +197,6 @@ export default function AboutPage() {
                 </div>
             </div>
             </div>
-
 
           {/* Meet Our Founders Section */}
           <div style={{
@@ -476,7 +476,7 @@ export default function AboutPage() {
                 padding: '15px'
             }}>
                 <img 
-              src= " /images/cloud-internet-internet-of-things-svgrepo-com.svg"
+              src="/images/cloud-internet-internet-of-things-svgrepo-com.svg"
                 alt="IoT Security Icon"
                 style={{
                     width: '30px',
@@ -595,7 +595,7 @@ export default function AboutPage() {
                     fontSize: '14px',
                     lineHeight: '1.6',
                     color: '#64748b'
-                }}>We don't offer cookie-cutter services. Everything we do is customized to your business goals.</p>
+                }}>We don&apos;t offer cookie-cutter services. Everything we do is customized to your business goals.</p>
                 </div>
 
                 {/* USP 3 - Built to Scale */}
@@ -667,7 +667,7 @@ export default function AboutPage() {
                     fontSize: '14px',
                     lineHeight: '1.6',
                     color: '#64748b'
-                }}>We speak your language—whether it's performance, ROI, or risk mitigation.</p>
+                }}>We speak your language—whether it&apos;s performance, ROI, or risk mitigation.</p>
                 </div>
             </div>
             </div>
@@ -691,26 +691,26 @@ export default function AboutPage() {
           <div>
             <h3 style={{ color: '#fbbf24', fontSize: '18px', fontWeight: '600', marginBottom: '25px' }}>Industries</h3>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Healthcare</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Education</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Financial Services</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Technology</a></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Healthcare</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Education</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Financial Services</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Technology</Link></li>
             </ul>
           </div>
           <div>
             <h3 style={{ color: '#fbbf24', fontSize: '18px', fontWeight: '600', marginBottom: '25px' }}>Solutions</h3>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Cybersecurity</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Software Development</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>IT Consultation</a></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Cybersecurity</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Software Development</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>IT Consultation</Link></li>
             </ul>
           </div>
           <div>
             <h3 style={{ color: '#fbbf24', fontSize: '18px', fontWeight: '600', marginBottom: '25px' }}>Services</h3>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Web Development</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Mobile App Development</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Security Assessment</a></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Web Development</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Mobile App Development</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Security Assessment</Link></li>
             </ul>
           </div>
           <div>

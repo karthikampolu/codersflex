@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function ServicesPage() {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif' }}>
@@ -20,7 +22,7 @@ export default function ServicesPage() {
           justifyContent: 'space-between',
           alignItems: 'center'
         }}>
-          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
             <div style={{
               width: '40px',
               height: '40px',
@@ -55,13 +57,13 @@ export default function ServicesPage() {
                 marginTop: '2px'
               }}>Communicate. Collaborate. Create.</div>
             </div>
-          </a>
+          </Link>
 
           <nav style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
-            <a href="/" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>HOME</a>
-            <a href="/#solutions" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>SOLUTIONS</a>
-           <a href="/services" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>SERVICES</a>
-            <a href="/about" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>ABOUT US</a>
+            <Link href="/" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>HOME</Link>
+            <Link href="/#solutions" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>SOLUTIONS</Link>
+            <Link href="/services" style={{ color: '#2563eb', textDecoration: 'none', fontWeight: '600' }}>SERVICES</Link>
+            <Link href="/about" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>ABOUT US</Link>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Contact Request&body=Hi, I am interested in your services." target="_blank" style={{
               background: '#2563eb',
               color: 'white',
@@ -96,7 +98,6 @@ export default function ServicesPage() {
               gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
               gap: '40px'
             }}>
-              {/* YOUR SERVICE CARDS GO HERE - PASTE YOUR CODE BELOW */}
               
               {/* Service Card 1 */}
               <div style={{

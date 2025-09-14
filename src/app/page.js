@@ -1,3 +1,4 @@
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -21,68 +22,63 @@ export default function Home() {
           justifyContent: 'space-between',
           alignItems: 'center'
         }}>
-        <a href="/" style={{ 
-  textDecoration: 'none', 
-  display: 'flex', 
-  alignItems: 'center', 
-  gap: '10px',
-  marginLeft: '-30px',// Add this line
-}}>
-  <div style={{
-    width: '40px',
-    height: '40px',
-    background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
-    borderRadius: '8px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '8px'
-  }}>
-    <img 
-      src="/images/logo.png" 
-      alt="CodersFlex Logo"
-      style={{
-        width: '30px',
-        height: '24px',
-        filter: 'brightness(0) invert(1)'
+        <Link href="/" style={{ 
+          textDecoration: 'none', 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: '10px',
+          marginLeft: '-30px'
+        }}>
+          <div style={{
+            width: '40px',
+            height: '40px',
+            background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
+            borderRadius: '8px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '8px'
+          }}>
+            <img 
+              src="/images/logo.png" 
+              alt="CodersFlex Logo"
+              style={{
+                width: '30px',
+                height: '24px',
+                filter: 'brightness(0) invert(1)'
+              }}
+            />
+          </div>
+          <div>
+            <div style={{
+              fontSize: '28px',
+              fontWeight: '700',
+              color: '#1e293b',
+              lineHeight: '1'
+            }}>CodersFlex</div>
+            <div style={{
+              fontSize: '12px',
+              color: '#64748b',
+              fontStyle: 'italic',
+              marginTop: '2px'
+            }}>Communicate. Collaborate. Create.</div>
+          </div>
+        </Link>
 
-      }}
-    />
-  </div>
-  <div>
-    <div style={{
-      fontSize: '28px',
-      fontWeight: '700',
-      color: '#1e293b',
-      lineHeight: '1'
-    }}>CodersFlex</div>
-    <div style={{
-      fontSize: '12px',
-      color: '#64748b',
-      fontStyle: 'italic',
-      marginTop: '2px'
-    }}>Communicate. Collaborate. Create.</div>
-  </div>
-</a>
-
-
-          
-          <nav style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
-            <a href="#home" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>HOME</a>
-            <a href="#solutions" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>SOLUTIONS</a>
-            <a href="/services" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>SERVICES</a>
-            <a href="/about" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>ABOUT US</a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Consultation Request&body=Hi, I would like to discuss my project requirements." target="_blank" style={{
-
-                background: '#2563eb',
-                color: 'white',
-                padding: '12px 24px',
-                borderRadius: '6px',
-                textDecoration: 'none',
-                fontWeight: '600'
-              }}>CONTACT</a>
-
-          </nav>
+        <nav style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
+          <Link href="/#home" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>HOME</Link>
+          <Link href="/#solutions" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>SOLUTIONS</Link>
+          <Link href="/services" style={{ color: '#64748b', textDecoration: 'none', fontWeight: '500' }}>SERVICES</Link>
+          <Link href="/about" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>ABOUT US</Link>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Consultation Request&body=Hi, I would like to discuss my project requirements." target="_blank" style={{
+            background: '#2563eb',
+            color: 'white',
+            padding: '12px 24px',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            fontWeight: '600'
+          }}>CONTACT</a>
+        </nav>
         </div>
       </header>
 
@@ -106,23 +102,21 @@ export default function Home() {
             fontWeight: '700',
             lineHeight: '1.2',
             marginBottom: '20px'
-          }}>Cybersecurity & Digital Solutions for Modern Businesse</h1>
+          }}>Cybersecurity & Digital Solutions for Modern Businesses</h1>
           <p style={{
             fontSize: '20px',
             marginBottom: '40px',
             opacity: '0.9'
           }}>Secure your Business</p>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Consultation Request&body=Hi, I would like to discuss my project requirements." target="_blank" style={{
-
-          background: 'rgba(255, 255, 255, 0.2)',
-          color: 'white',
-          padding: '15px 30px',
-          borderRadius: '8px',
-          textDecoration: 'none',
-          fontWeight: '600',
-          border: '2px solid rgba(255, 255, 255, 0.3)'
-        }}> Talk to our Consultant</a>
-
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Consultation Request&body=Hi, I would like to discuss my project requirements." target="_blank" style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            color: 'white',
+            padding: '15px 30px',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            fontWeight: '600',
+            border: '2px solid rgba(255, 255, 255, 0.3)'
+          }}>Talk to our Consultant</a>
         </div>
       </section>
 
@@ -272,7 +266,7 @@ export default function Home() {
                   style={{
                     width: '40px',
                     height: '40px',
-                    filter: 'brightness(0) invert(1)' // Makes icon white
+                    filter: 'brightness(0) invert(1)'
                   }}
                 />
               </div>
@@ -294,7 +288,7 @@ export default function Home() {
                 marginBottom: '25px',
                 color: '#2563eb'
               }}>Price: Starts From RS 9999</div>
-              <a href="#" style={{
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Cybersecurity Inquiry&body=Hi, I am interested in your cybersecurity services." target="_blank" style={{
                 color: '#2563eb',
                 textDecoration: 'none',
                 fontWeight: '500',
@@ -331,7 +325,7 @@ export default function Home() {
                   style={{
                     width: '40px',
                     height: '40px',
-                    filter: 'brightness(0) invert(1)' // Makes icon white
+                    filter: 'brightness(0) invert(1)'
                   }}
                 />
               </div>
@@ -353,7 +347,7 @@ export default function Home() {
                 marginBottom: '25px',
                 color: '#2563eb'
               }}>Price: Starts From RS 19999</div>
-              <a href="#" style={{
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=Software Development Inquiry&body=Hi, I am interested in your software development services." target="_blank" style={{
                 color: '#2563eb',
                 textDecoration: 'none',
                 fontWeight: '500',
@@ -390,7 +384,7 @@ export default function Home() {
                   style={{
                     width: '40px',
                     height: '40px',
-                    filter: 'brightness(0) invert(1)' // Makes icon white
+                    filter: 'brightness(0) invert(1)'
                   }}
                 />
               </div>
@@ -412,7 +406,7 @@ export default function Home() {
                 marginBottom: '25px',
                 color: '#2563eb'
               }}>Price: Starts From RS 19999</div>
-              <a href="#" style={{
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com&su=IT Consultation Inquiry&body=Hi, I am interested in your IT consultation services." target="_blank" style={{
                 color: '#2563eb',
                 textDecoration: 'none',
                 fontWeight: '500',
@@ -423,7 +417,6 @@ export default function Home() {
               }}>Know more →</a>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -443,26 +436,26 @@ export default function Home() {
           <div>
             <h3 style={{ color: '#fbbf24', fontSize: '18px', fontWeight: '600', marginBottom: '25px' }}>Industries</h3>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Healthcare</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Education</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Financial Services</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Technology</a></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Healthcare</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Education</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Financial Services</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Technology</Link></li>
             </ul>
           </div>
           <div>
             <h3 style={{ color: '#fbbf24', fontSize: '18px', fontWeight: '600', marginBottom: '25px' }}>Solutions</h3>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Cybersecurity</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Software Development</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>IT Consultation</a></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Cybersecurity</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Software Development</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>IT Consultation</Link></li>
             </ul>
           </div>
           <div>
             <h3 style={{ color: '#fbbf24', fontSize: '18px', fontWeight: '600', marginBottom: '25px' }}>Services</h3>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Web Development</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Mobile App Development</a></li>
-              <li style={{ marginBottom: '12px' }}><a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Security Assessment</a></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Web Development</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Mobile App Development</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>Security Assessment</Link></li>
             </ul>
           </div>
           <div>
@@ -470,19 +463,18 @@ export default function Home() {
             <p style={{ color: '#cbd5e1', fontSize: '14px', marginBottom: '8px' }}>+91 – 81 82 83 8888</p>
             <p style={{ color: '#cbd5e1', fontSize: '14px', marginBottom: '8px' }}>+91 – 88 83 33 0419</p>
             <a 
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com" 
-            target="_blank"
-            style={{ 
-              color: '#cbd5e1', 
-              fontSize: '14px', 
-              marginBottom: '20px',
-              textDecoration: 'none',
-              display: 'block'
-            }}
-          >
-            info.codersflex@gmail.com
-          </a>
-
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=info.codersflex@gmail.com" 
+              target="_blank"
+              style={{ 
+                color: '#cbd5e1', 
+                fontSize: '14px', 
+                marginBottom: '20px',
+                textDecoration: 'none',
+                display: 'block'
+              }}
+            >
+              info.codersflex@gmail.com
+            </a>
           </div>
         </div>
         <div style={{
